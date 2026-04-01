@@ -5077,19 +5077,19 @@ MouseOutHandler, MouseWheelHandler {
     }
 
     void writeRecoveryToStorage() {
-	console("write recovery");
+        // console("write recovery");
     	Storage stor = Storage.getLocalStorageIfSupported();
     	if (stor == null)
     		return;
     	String s = dumpCircuit();
-    	stor.setItem("circuitRecovery", s);
+    	// stor.setItem("circuitRecovery", s);
     }
 
     void readRecovery() {
-	Storage stor = Storage.getLocalStorageIfSupported();
-	if (stor == null)
-		return;
-	recovery = stor.getItem("circuitRecovery");
+        //Storage stor = Storage.getLocalStorageIfSupported();
+        //if (stor == null)
+        //    return;
+        //recovery = stor.getItem("circuitRecovery");
     }
 
 
